@@ -1,0 +1,26 @@
+requireAllColumns: true
+
+columns:
+  - weight
+  - height
+  - age
+#  - name: weight
+#  - name: height
+#  - name: age
+#  - name: gender
+#    type: categoric
+#    values:
+#      - M
+#      - F
+#      - U
+
+
+server:
+  adminMinThreads: 1
+  adminMaxThreads: 64
+  applicationConnectors:
+    - type: http
+      port: 8080
+  adminConnectors:
+    - type: http
+      port: 8081
